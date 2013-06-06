@@ -9,4 +9,4 @@
 4. Select a DVD, and then select all its product reviews.
   * `SELECT * FROM reviews WHERE product_id = 3;`
 5. Select a product review, and then select all the product reviews that correspond to the first product reviews DVD.
-  * `SELECT * FROM reviews WHERE product_id = (SELECT product_id FROM reviews WHERE id = 4);`
+  * `SELECT * FROM reviews WHERE product_id = (SELECT product_id FROM reviews WHERE id = 4 LIMIT 1);`
